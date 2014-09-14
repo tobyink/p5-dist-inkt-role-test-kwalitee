@@ -3,12 +3,12 @@
 @prefix : <http://ontologi.es/doap-deps#>.
 
 `Dist-Inkt-Role-Test-Kwalitee`
-	:runtime-requirement    [ :on "App::CPANTS::Lint" ];
-	:runtime-requirement    [ :on "Moose::Role" ];
-	:runtime-requirement    [ :on "Types::Standard" ];
-	:runtime-requirement    [ :on "perl 5.010001" ];
-	:runtime-requirement    [ :on "namespace::autoclean" ];
-	:runtime-requirement    [ :on "Dist::Inkt::Role::Test" ];
+	:runtime-requirement    [ :on "App::CPANTS::Lint"^^:CpanId ];
+	:runtime-requirement    [ :on "Moose::Role"^^:CpanId ];
+	:runtime-requirement    [ :on "Types::Standard"^^:CpanId ];
+	:runtime-requirement    [ :on "perl 5.010001"^^:CpanId ];
+	:runtime-requirement    [ :on "namespace::autoclean"^^:CpanId ];
+	:runtime-requirement    [ :on "Dist::Inkt::Role::Test"^^:CpanId ];
 	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
 	.
 
