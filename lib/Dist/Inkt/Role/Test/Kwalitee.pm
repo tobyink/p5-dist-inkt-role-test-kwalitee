@@ -24,7 +24,7 @@ after BUILD => sub {
 		my $app = App::CPANTS::Lint::->new(colour => 1);
 		my $res = $app->lint($tarball);
 		$app->output_report;
-		unless ($res or $self->skip_kwalitee_test) {
+		unless (!$res or $self->skip_kwalitee_test) {
 			die "Needs more kwalitee";
 		}
 	});
